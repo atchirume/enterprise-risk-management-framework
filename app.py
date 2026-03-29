@@ -70,6 +70,16 @@ st.markdown(
         color: #f8fafc !important;
         font-weight: 600 !important;
     }
+    
+    section[data-testid="stSidebar"] .stTextInput > div > div,
+    section[data-testid="stSidebar"] .stTextArea > div > div,
+    section[data-testid="stSidebar"] .stDateInput > div > div,
+    section[data-testid="stSidebar"] .stSelectbox > div > div,
+    section[data-testid="stSidebar"] .stMultiSelect > div > div {
+    background: rgba(255,255,255,0.95) !important;
+    border: 1px solid rgba(255,255,255,0.18) !important;
+    border-radius: 12px !important;
+}
 
     section[data-testid="stSidebar"] .stExpander {
         background: rgba(255,255,255,0.08);
@@ -228,10 +238,33 @@ st.markdown(
         box-shadow: 0 6px 18px rgba(15, 23, 42, 0.05);
     }
 
-    .streamlit-expanderHeader {
-        font-weight: 700 !important;
-        color: #0f172a !important;
-    }
+    /* Main area expander headers */
+  div[data-testid="stExpander"] summary {
+    font-weight: 700 !important;
+    color: #0f172a !important;
+   }
+
+/* Sidebar expander headers */
+section[data-testid="stSidebar"] div[data-testid="stExpander"] summary {
+    color: #f8fafc !important;
+    font-weight: 700 !important;
+    background: rgba(255,255,255,0.06) !important;
+    border-radius: 12px !important;
+    padding: 0.35rem 0.6rem !important;
+}
+
+ section[data-testid="stSidebar"] .block-container {
+    padding-top: 1.2rem !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+
+/* Sidebar expander content */
+section[data-testid="stSidebar"] div[data-testid="stExpanderDetails"] {
+    background: rgba(255,255,255,0.04) !important;
+    border-radius: 0 0 12px 12px !important;
+    padding-top: 0.4rem !important;
+}
 
     span[data-baseweb="tag"] {
         background-color: #dbeafe !important;
