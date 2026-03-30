@@ -618,6 +618,9 @@ st.markdown(
             Executive risk intelligence platform for identifying, assessing, monitoring,
             and reporting enterprise-wide risks across departments and functions.
         </div>
+        <div class="hero-subtitle">
+        Developed by   Chirume Admire Tarisirayi
+        </div>
     </div>
     """,
     unsafe_allow_html=True,
@@ -1173,4 +1176,11 @@ st.markdown(
     </div>
     """,
     unsafe_allow_html=True,
+)
+st.markdown(
+    """
+    ---
+    **Developed by Admire Tarisirayi Chirume**  
+    | Economist | Data Scientist  
+    """
 )
